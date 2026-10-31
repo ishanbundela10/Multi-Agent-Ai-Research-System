@@ -13,6 +13,9 @@ backend/.env
 frontend/.env
 *.pem
 *.key
+*.crt
+*.p12
+*.pfx
 
 # ------------------------------------------
 # Python Backend
@@ -49,6 +52,7 @@ env.bak/
 venv.bak/
 backend/.venv/
 backend/venv/
+.venv*/
 
 # Pytest & Coverage
 .pytest_cache/
@@ -57,6 +61,9 @@ backend/venv/
 htmlcov/
 .tox/
 .nox/
+coverage.xml
+*.cover
+hypothesis/
 
 # ------------------------------------------
 # Node / Frontend (React + Vite)
@@ -67,6 +74,8 @@ dist/
 frontend/dist/
 dist-ssr/
 frontend/dist-ssr/
+frontend/.vite/
+frontend/.cache/
 *.local
 
 # Logs
@@ -77,6 +86,19 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+
+# Generated reports and temporary files
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+tmp/
+temp/
 
 # ------------------------------------------
 # Operating System & IDE Files
@@ -100,4 +122,3 @@ desktop.ini
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
-
