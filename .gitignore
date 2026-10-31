@@ -122,3 +122,9 @@ desktop.ini
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+# Frontend build output and caches
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.cache/
